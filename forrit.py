@@ -1,7 +1,7 @@
 #Höfundur: Huginn Þór Jóhannsson
 from bottle import route, run, template
 from sys import argv
-def index():
+def index('/'):
     return """
     <h2>Verkefni 1.</h2>
     <a href="/about">Um okkur</a>
