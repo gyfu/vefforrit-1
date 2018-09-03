@@ -1,9 +1,6 @@
 #Höfundur: Huginn Þór Jóhannsson
 from bottle import route, run, template
 from sys import argv
-bottle.debug(True)
-
-@route('/')
 def index():
     return """
     <h2>Verkefni 1.</h2>
