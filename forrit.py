@@ -25,4 +25,4 @@ def bio():
 @route('/pics')
 def testing():
     return "Testing Pics"
-run(host="localhost",port=8080,debut=True)
+run(host="localhost",port=8080,debug=True)
