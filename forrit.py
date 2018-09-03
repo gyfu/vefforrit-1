@@ -1,9 +1,7 @@
 #Höfundur: Huginn Þór Jóhannsson
 from bottle import route, run, template
-
-@route('/hi/<name>')
-def hi(name="Name"):
-    return template('Hello {{name}},how are you?', name=name)
+from sys import argv
+bottle.debug(True)
 
 @route('/')
 def index():
@@ -25,4 +23,4 @@ def bio():
 @route('/pics')
 def testing():
     return "Testing Pics"
-run(host="localhost",port=8080,debug=True)
+run(host="0.0.0.0",port=argv[1],debug=True)
