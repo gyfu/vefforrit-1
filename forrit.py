@@ -5,10 +5,6 @@ from bottle import route, run, template
 def hi(name="Name"):
     return template('Hello {{name}},how are you?', name=name)
 
-@route('/storage')
-def storage():
-    return "Test"
-
 @route('/')
 def index():
     return """
@@ -20,7 +16,7 @@ def index():
 
 @route('/about')
 def about():
-    return "Testing About"
+    return "<h1>Testing About</h1>"
 
 @route('/bio')
 def bio():
